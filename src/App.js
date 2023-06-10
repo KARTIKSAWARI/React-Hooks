@@ -5,6 +5,8 @@ import Effect from './Components/effect';
 import Effect2 from './Components/effect2';
 import Context from './Components/context';
 import Reference from './Components/Reference';
+import Reference2 from './Components/Reference2';
+
 
 function App() {
   return (
@@ -23,6 +25,9 @@ function App() {
       <hr></hr>
       <h3>Reference</h3>
       <Reference/>
+      <hr></hr>
+      <h3>Reference 2</h3>
+      <Reference2/>
     </div>
     
   );
