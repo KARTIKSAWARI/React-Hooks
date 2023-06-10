@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 
-const InputFocus = () => {
+const Focus = () => {
   const inputRef = useRef(null);
 
   const Input = () => {
@@ -15,4 +15,4 @@ const InputFocus = () => {
   );
 };
 
-export default InputFocus;
+export default Focus;
