@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
+import States from './Components/state.js';
+import Effect from './Components/effect';
+import Effect2 from './Components/effect2';
+import Context from './Components/context';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h3>Use State</h3>
+      <States/>
+      <hr></hr>
+      <h3>Use effect</h3>
+      <Effect/>
+      <hr></hr>
+      <Effect2/>
+      <hr></hr>
+      <h3>Use Context</h3>
+      <Context/>
     </div>
+    
   );
 }
 
