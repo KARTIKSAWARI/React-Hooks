@@ -5,7 +5,7 @@ const MyContext = React.createContext();
 const DisplayData = () => {
   const value = useContext(MyContext);
 
-  return <p>{value}</p>;
+  return <p>value from displaydata is {value}</p>;
 };
 
 const App = () => {

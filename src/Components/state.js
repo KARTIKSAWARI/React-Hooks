@@ -7,6 +7,7 @@ const Counter = () => {
     if(count<10)
     {
       setCount(count + 1);
+      console.log(count);
     }
     
   };
