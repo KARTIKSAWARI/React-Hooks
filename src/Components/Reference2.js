@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 
-function Reference2() {
+function Ref {
     const [timer,settimer]=useState(0)
     const intervalref=useRef()
 
@@ -22,4 +22,4 @@ function Reference2() {
   )
 }
 
-export default Reference2
+export default Ref
