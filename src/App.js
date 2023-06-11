@@ -28,6 +28,9 @@ function App() {
       <hr></hr>
       <h3>Reference 2</h3>
       <Reference2/>
+      <hr></hr>
+      <br></br>
+      <br></br>
     </div>
     
   );
