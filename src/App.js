@@ -6,7 +6,8 @@ import Effect2 from './Components/effect2';
 import Context from './Components/context';
 import Reference from './Components/Reference';
 import Reference2 from './Components/Reference2';
-
+import Reference3 from './Components/Reference3';
+import Reducer from './Components/Reducer';
 
 function App() {
   return (
@@ -29,6 +30,12 @@ function App() {
       <h3>Reference 2</h3>
       <Reference2/>
       <hr></hr>
+      <h3>Referecne 3</h3>
+      <Reference3/>
+      <hr></hr>
+      <h3>Reducer</h3>
+      <Reducer/>
+
       <br></br>
       <br></br>
     </div>
