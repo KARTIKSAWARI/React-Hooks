@@ -11,6 +11,9 @@ import Reducer from './Components/Reducer';
 import Custom from './Components/Custom';
 
 function App() {
+
+
+
   return (
     <div className="App">
       <h3>Use State</h3>
@@ -42,6 +45,10 @@ function App() {
 
       <br></br>
       <br></br>
+
+
+
+
     </div>
     
   );
