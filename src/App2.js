@@ -1,10 +1,21 @@
-import React from 'react'
-import Tables from './Components/Tables'
+import React, { useState } from 'react';
+import FormComponent from './fromcomponent';
+import DisplayComponent from './Displaycomponent';
 
-function App2() {
+const App2 = () => {
+  const [formData, setFormData] = useState({});
+
+  const handleFormSubmit = (data) => {
+    setFormData(data);
+  };
+
   return (
-    <Tables/>
-  )
-}
+    <div style={{textAlign:'center'}}>
+      <h1>Form App</h1>
+      <FormComponent onSubmit={handleFormSubmit} />
+      <DisplayComponent  data={formData} />
+    </div>
+  );
+};
 
-export default App2
+export default App2;
