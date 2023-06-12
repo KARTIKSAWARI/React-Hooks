@@ -8,6 +8,7 @@ import Reference from './Components/Reference';
 import Reference2 from './Components/Reference2';
 import Reference3 from './Components/Reference3';
 import Reducer from './Components/Reducer';
+import Custom from './Components/Custom';
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
       <hr></hr>
       <h3>Reducer</h3>
       <Reducer/>
+      <hr></hr>
+      <h1>Custom hook</h1>
+      <Custom/>
 
       <br></br>
       <br></br>
