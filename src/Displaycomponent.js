@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const DisplayComponent = ({ data }) => {
+  const [displayedData, setDisplayedData] = useState([]);
+
+  useEffect(() => {
+    if (data) {
+      setDisplayedData((prevData) => [...prevData, data]);
+    }
+  }, [data]);
+
   return (
     <div>
       <h2>Display Component</h2>
-      <p>Name: {data.name}</p>
-      <p>Age: {data.age}</p>
-      <p>Address: {data.address}</p>
+      {displayedData.map((item, index) => (
+        <div key={index}>
+          <p>Name: {item.name}</p>
+          <p>Age: {item.age}</p>
+          <p>Address: {item.address}</p>
+          <hr></hr>
+        </div>
+      ))}
     </div>
   );
 };

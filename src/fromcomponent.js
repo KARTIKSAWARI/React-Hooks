@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// import Button from '@material-ui/Button';
 
 const FormComponent = ({ onSubmit }) => {
   const [name, setName] = useState('');
@@ -15,7 +16,7 @@ const FormComponent = ({ onSubmit }) => {
 
   return (
     <div>
-      <h2>Form Component</h2>
+      <h2>From Component</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Name:</label>
@@ -41,7 +42,10 @@ const FormComponent = ({ onSubmit }) => {
             onChange={(e) => setAddress(e.target.value)}
           />
         </div>
-        <button type="submit">Submit</button>
+        {/* <button type="submit">Submit</button> */}
+
+        {/* <Button type="submit" variant="contained">Contained</Button> */}
+        <button type='submit'>Contained</button>
       </form>
     </div>
   );
